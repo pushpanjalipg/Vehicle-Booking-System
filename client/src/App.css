@@ -1,0 +1,166 @@
+
+body {
+   overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f7f9fc url("/public/images/background1.png") no-repeat right bottom;
+  background-size: contain; 
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+.navbar {
+  background:  #ff6600;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  max-width: 550px;
+  height: 600px;
+  margin: 20px ;
+  padding: 20px;
+   overflow: hidden;
+}
+.search_container {
+  padding: 10px;
+   overflow: hidden;
+}
+.add-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin-left:  20%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+.card-container {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+ background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card button {
+  display: block;       
+  margin: 15px auto 0;   
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.card button:hover {
+  background: #e05500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.search_form {
+  display: flex;
+    flex-direction: row;
+  gap: 8px;
+  align-items: flex-end;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .search_form {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  .form_group {
+    width: 100%;
+  }
+
+  .search_form button {
+    width: 100%; 
+  }
+  body{
+      overflow: auto;
+  }
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff6600;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.input.error {
+  border-color: #dc3545;
+  background: #fff5f5;
+}
+
+
+.error-text {
+  color: #dc3545;
+  font-size: 13px;
+  margin-left: 6px;
+  font-weight: 500;
+}
